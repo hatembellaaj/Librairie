@@ -1,6 +1,8 @@
 package com.enim.CRUD.model;  
 import javax.persistence.Column;  
-import javax.persistence.Entity;  
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;  
 import javax.persistence.Table;    
 //mark class as an Entity   
@@ -12,6 +14,7 @@ public class Books
 	//Defining book id as primary key  
 	@Id  
 	@Column  
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int bookid;  
 	@Column  
 	private String bookname;  
