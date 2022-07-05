@@ -22,6 +22,7 @@ public class Books
 	private String author;  
 	@Column  
 	private int price;
+	
 	public int getBookid() {
 		return bookid;
 	}

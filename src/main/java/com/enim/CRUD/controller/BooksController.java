@@ -39,6 +39,7 @@ public class BooksController
 	@DeleteMapping("/book/{bookid}")  
 	private void deleteBook(@PathVariable("bookid") int bookid)   
 	{  
+		System.out.println("Suppression Book ID : " + bookid);
 		booksService.delete(bookid);  
 	}  
 	//creating post mapping that post the book detail in the database  
