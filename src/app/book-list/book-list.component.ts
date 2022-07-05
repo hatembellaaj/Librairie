@@ -25,5 +25,13 @@ export class BookListComponent implements OnInit {
   updateBook(bookId:number){
     this.router.navigate(['update-book',bookId]);
   }
+  deleteBook(bookId:number){
+    console.log("deletion in progress ........");
+    this.booksService.deleteBook(bookId);
+    window.location.reload();
+    
+  }
+
+
 
 }
